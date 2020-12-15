@@ -1,9 +1,35 @@
-.media {
-  display: grid;
+$columns: 3;
+$rows: 4;
+$width: 100vw;
+$height: ($rows / $columns) * $width;
 
-  // &__item {
-  // }
+.media {
+  --columns: 3;
+  --rows: 4;
+  --width: 100vw;
+  --height: calc(var(--rows) / var(--columns) * var(--width));
+  width: var(--width);
+  height: var(--height);
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+
+  &__item {
+    overflow: hidden;
+  }
 
   // &__media__item--1x1 {
   // }
+}
+
+@media (min-width: 600px) {
+  .media {
+    --columns: 4;
+  }
+}
+
+@media (min-width: 1000px) {
+  .media {
+    --width: 1000px;
+  }
 }
