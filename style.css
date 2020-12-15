@@ -29,11 +29,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+.main-header__heading {
   font-family: "True Crimes", sans-serif;
   font-size: 60px;
-}
-
-p {
-  font-family: Nunito, sans-serif;
 }
