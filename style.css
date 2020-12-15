@@ -25,6 +25,10 @@ ul {
   src: url(font/true-crimes.ttf) format("truetype");
 }
 
+body {
+  min-height: 100vh;
+}
+
 h1 {
   font-family: "True Crimes", sans-serif;
   font-size: 60px;
