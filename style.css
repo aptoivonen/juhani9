@@ -291,6 +291,7 @@ video {
 @media (min-width: 600px) {
   .media {
     --columns: 4;
+    --rows: 6;
   }
 }
 
@@ -303,12 +304,14 @@ video {
 @media (min-width: 768px) {
   .media {
     --columns: 5;
+    --rows: 5;
   }
 }
 
 @media (min-width: 1000px) {
   .media {
     --columns: 6;
+    --rows: 4;
   }
 }
 
