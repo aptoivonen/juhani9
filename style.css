@@ -52,12 +52,14 @@ video {
   --rows: 8;
   --width: (100vw - 20px);
   --height: calc(var(--rows) / var(--columns) * var(--width));
+  --gutter: 5px;
   width: var(--width);
   height: var(--height);
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: repeat(var(--rows), 1fr);
-  grid-gap: 5px;
+  grid-gap: var(--gutter);
+  padding: var(--gutter);
 }
 
 .media__item {
@@ -141,8 +143,8 @@ video {
 }
 
 .media__item--text {
-  display: flex;
-  align-items: center;
+  align-self: center;
+  justify-self: center;
   color: #fff;
   font-size: calc(2.9rem + 3vw);
 }
