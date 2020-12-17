@@ -44,11 +44,10 @@ const staggerAnimations = (animationClassNames) => {
 staggerAnimations(["slide-in-left", "flicker-in-1", "slide-in-right"]);
 
 const playControl = () => {
-  const playElement = document.querySelector("#play");
-  if (!playElement) return;
   const audio = document.querySelector("#audio");
   if (!audio) return;
-  addEventListener("click", () => {
+
+  const playToggle = () => {
     if (!audio.loop) {
       audio.setAttribute("loop", "");
       audio.play();
@@ -57,6 +56,14 @@ const playControl = () => {
     } else {
       audio.pause();
     }
+  };
+
+  addEventListener("click", () => {
+    playToggle();
+  });
+
+  addEventListener("touchend", () => {
+    playToggle();
   });
 };
 
