@@ -1,1 +1,16 @@
-  
+.footer {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+
+  &__juhani {
+    font-size: 0.8rem;
+  }
+
+  &__music {
+    font-size: 0.7rem;
+  }
+
+  &__link {
+    color: lightblue;
+  }
+}

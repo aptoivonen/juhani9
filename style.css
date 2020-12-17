@@ -321,3 +321,20 @@ video {
 .flicker-in-1 {
   animation: flicker-in-1 2s linear both;
 }
+
+.footer {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.footer__juhani {
+  font-size: 0.8rem;
+}
+
+.footer__music {
+  font-size: 0.7rem;
+}
+
+.footer__link {
+  color: lightblue;
+}
