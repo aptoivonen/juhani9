@@ -51,7 +51,7 @@ const playControl = () => {
 
   const playToggle = () => {
     if (!audio.loop) {
-      audio.setAttribute("loop", "");
+      audio.setAttribute("loop", "loop");
       audio.play();
     } else if (audio.paused) {
       audio.play();
