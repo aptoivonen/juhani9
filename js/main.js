@@ -42,3 +42,22 @@ const staggerAnimations = (animationClassNames) => {
 };
 
 staggerAnimations(["slide-in-left", "flicker-in-1", "slide-in-right"]);
+
+const playControl = () => {
+  const playElement = document.querySelector("#play");
+  if (!playElement) return;
+  const audio = document.querySelector("#audio");
+  if (!audio) return;
+  addEventListener("click", () => {
+    if (!audio.loop) {
+      audio.setAttribute("loop", "");
+      audio.play();
+    } else if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+};
+
+playControl();
