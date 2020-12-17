@@ -26,7 +26,7 @@ ul {
 
 body {
   min-height: 100vh;
-  background: url(./images/flags-bg.png);
+  background: url(./images/treasure-bg.jpg);
   font-family: "True Crimes", Arial, Helvetica, sans-serif;
 }
 
@@ -68,6 +68,17 @@ video {
 @keyframes slide-in-left {
   0% {
     transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
@@ -189,6 +200,11 @@ video {
 
 .media__item {
   overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.media__item--no-shadow {
+  box-shadow: none;
 }
 
 .media__item--2x1 {
@@ -246,10 +262,6 @@ video {
   }
 }
 
-.wobble-letter {
-  animation: wobble 3s infinite ease-in;
-}
-
 .letter {
   display: flex;
   align-items: center;
@@ -289,10 +301,18 @@ video {
   background: url("./images/electronics-bg.png");
 }
 
+.wobble-letter {
+  animation: wobble 3s infinite ease-in;
+}
+
 .slide-in-left {
   animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.slide-in-right {
+  animation: slide-in-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .flicker-in-1 {
-  animation: 2s flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both;
 }
