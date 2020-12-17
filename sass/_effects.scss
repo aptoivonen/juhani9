@@ -1,8 +1,3 @@
-.wobble-letter {
-  -webkit-animation: wobble 3s infinite ease-in;
-  animation: wobble 3s infinite ease-in;
-}
-
 .letter {
   display: flex;
   align-items: center;
@@ -51,12 +46,17 @@
   background: url("./images/electronics-bg.png");
 }
 
+.wobble-letter {
+  -webkit-animation: wobble 3s infinite ease-in;
+  animation: wobble 3s infinite ease-in;
+}
+
 .slide-in-left {
   -webkit-animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .flicker-in-1 {
-  -webkit-animation: 2s flicker-in-1 2s linear both;
-  animation: 2s flicker-in-1 2s linear both;
+  -webkit-animation: flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both;
 }
