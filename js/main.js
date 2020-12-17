@@ -26,3 +26,19 @@ addEventListener("resize", () => {
 });
 
 setVideoSources();
+
+const staggerAnimations = (animationClassNames) => {
+  animationClassNames.forEach((className) => {
+    const elements = document.querySelectorAll(`.${className}`);
+    if (elements) {
+      const baseDelay = 1;
+      let delay = baseDelay;
+      elements.forEach((element) => {
+        element.style.animationDelay = `${delay}s`;
+        delay += baseDelay;
+      });
+    }
+  });
+};
+
+staggerAnimations(["flicker-in-1", "slide-in-left"]);
