@@ -194,6 +194,7 @@ video {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: repeat(var(--rows), 1fr);
+  grid-auto-flow: dense;
   grid-gap: var(--gutter);
   padding: var(--gutter);
 }
