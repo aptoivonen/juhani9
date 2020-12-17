@@ -1,0 +1,68 @@
+.wobble-letter {
+  -webkit-animation: wobble 3s infinite ease-in;
+  animation: wobble 3s infinite ease-in;
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem + 25vw);
+  color: #16b8f3;
+  text-shadow: 0 0 10px #2138ab;
+}
+
+@media (min-width: 740px) {
+  .letter {
+    font-size: 200px;
+  }
+}
+
+.scooter-bg {
+  background: linear-gradient(to bottom, rgb(54, 209, 220), rgb(91, 134, 229));
+}
+
+.sulphur-bg {
+  background: linear-gradient(to bottom, rgb(202, 197, 49), rgb(243, 249, 167));
+}
+
+.wiretap-bg {
+  background: linear-gradient(
+    to bottom,
+    rgb(138, 35, 135),
+    rgb(233, 64, 87),
+    rgb(242, 113, 33)
+  );
+}
+
+.summer-dog-bg {
+  background: linear-gradient(
+    to bottom,
+    rgb(168, 255, 120),
+    rgb(120, 255, 214)
+  );
+}
+
+.treasure-bg {
+  background: url("./images/treasure-bg.jpg");
+}
+
+.electronics-bg {
+  background: url("./images/electronics-bg.png");
+}
+
+.pulse {
+  -webkit-animation: pulse 3s ease-in-out 3 both;
+  animation: pulse 3s ease-in-out 3 both;
+}
+
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.flicker-in-1 {
+  -webkit-animation: 2s flicker-in-1 2s linear both;
+  animation: 2s flicker-in-1 2s linear both;
+}
