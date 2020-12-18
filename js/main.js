@@ -27,8 +27,7 @@ addEventListener("resize", () => {
 
 setVideoSources();
 
-const staggerAnimations = (animationClassNames) => {
-  const baseDelay = 1;
+const staggerAnimations = (animationClassNames, baseDelay) => {
   let delay = 0;
   animationClassNames.forEach((className) => {
     const elements = document.querySelectorAll(`.${className}`);
@@ -41,4 +40,8 @@ const staggerAnimations = (animationClassNames) => {
   });
 };
 
-staggerAnimations(["slide-in-left", "flicker-in-1", "slide-in-right"]);
+staggerAnimations(
+  ["slide-in-left", "flicker-in-1", "puff-in-center", "slit-in-vertical"],
+  1
+);
+staggerAnimations(["wobble-letter"], 1);

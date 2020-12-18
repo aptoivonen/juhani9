@@ -60,12 +60,17 @@
   animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.slide-in-right {
-  -webkit-animation: slide-in-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
 .flicker-in-1 {
   -webkit-animation: flicker-in-1 2s linear both;
   animation: flicker-in-1 2s linear both;
+}
+
+.puff-in-center {
+  -webkit-animation: puff-in-center 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.slit-in-vertical {
+  -webkit-animation: slit-in-vertical 2s ease-out both;
+  animation: slit-in-vertical 2s ease-out both;
 }
