@@ -1,16 +1,26 @@
-.letter {
+#cell-letter {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(1rem + 25vw);
+}
+
+@media (min-width: 740px) {
+  #cell-letter {
+    font-size: 200px;
+  }
+}
+
+.letter {
+  @extend #cell-letter;
   color: #16b8f3;
   text-shadow: 0 0 10px #2138ab;
 }
 
-@media (min-width: 740px) {
-  .letter {
-    font-size: 200px;
-  }
+.age {
+  @extend #cell-letter;
+  color: #16b8f3;
+  text-shadow: 0 0 10px #2138ab;
 }
 
 .scooter-bg {

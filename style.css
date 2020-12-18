@@ -279,19 +279,27 @@ video {
   }
 }
 
-.letter {
+#cell-letter, .letter, .age {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(1rem + 25vw);
+}
+
+@media (min-width: 740px) {
+  #cell-letter, .letter, .age {
+    font-size: 200px;
+  }
+}
+
+.letter {
   color: #16b8f3;
   text-shadow: 0 0 10px #2138ab;
 }
 
-@media (min-width: 740px) {
-  .letter {
-    font-size: 200px;
-  }
+.age {
+  color: #16b8f3;
+  text-shadow: 0 0 10px #2138ab;
 }
 
 .scooter-bg {
@@ -340,6 +348,14 @@ video {
 
 .slit-in-vertical {
   animation: slit-in-vertical 2s ease-out both;
+}
+
+.player {
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  width: 178px;
+  height: 62px;
 }
 
 .footer {
