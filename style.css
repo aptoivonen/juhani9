@@ -358,6 +358,7 @@ video {
   right: 0;
   width: 178px;
   height: 62px;
+  z-index: 2;
 }
 
 .footer {
